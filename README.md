@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Marcel</h1>
 <h3 align="center">A passionate game developer from Poland</h3>
 
-- 🔭 I’m currently working on **...**
+- 🔭 I’m currently working on **Licznik Wypłat i System Rezerwacji w Kinie**
 
 - 🌱 I’m currently learning **Python, GDScript**
 
