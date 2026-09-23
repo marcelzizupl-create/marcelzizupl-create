@@ -1,29 +1,40 @@
-<h1 align="center">Hi 👋, I'm Marcel</h1>
-<h3 align="center">A passionate game developer from Poland</h3>
+<h1 align="center">Hi, I'm Marcel 👋</h1>
 
-- 🔭 I’m currently working on **Licznik Wypłat, System Rezerwacji w Kinie and Support Actual**
-
-- 🌱 I’m currently learning **Python, GDScript**
-
-- 👯 I’m looking to collaborate on **...**
-
-- 🤝 I’m looking for help with **...**
-
-- 👨‍💻 All of my projects are available at [...](...)
-
-- 📝 I regularly write articles on [...](...)
-
-- 💬 Ask me about **...**
-
-- 📫 How to reach me **...**
-
-- 📄 Know about my experiences [...](...)
-
-- ⚡ Fun fact **I'm an AI expert and I'm obsessed with collecting CDs.**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+<p align="center">
+  <strong>Game developer &amp; builder of practical tools · Poland 🇵🇱</strong><br>
+  Learning Python and GDScript by building things.
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+<p align="center">
+  <a href="https://github.com/marcelzizupl-create?tab=repositories">Explore my projects</a>
+  ·
+  <a href="https://github.com/marcelzizupl-create/marcelzizupl-create/actions/workflows/metrics.yml">Metrics workflow</a>
+</p>
+
+## About me
+
+- 🎮 I enjoy making games and experimenting with game engines.
+- 🐍 I'm learning Python and GDScript through hands-on projects.
+- 💿 Away from the keyboard, I collect CDs.
+
+## Selected projects
+
+| Project | What it does |
+| --- | --- |
+| [Risz Engine](https://github.com/marcelzizupl-create/Risz_Engine) | A small Pygame engine for grand strategy experiments. |
+| [Touch Bar Burn-In Test](https://github.com/marcelzizupl-create/touchbarapp) | A native macOS app for manually checking a physical Touch Bar. |
+| [Dungeon Crawler](https://github.com/marcelzizupl-create/dungeoncrawler) | A small terminal game written while learning Python. |
+
+## 📅 Isometric commit calendar
+
+![My GitHub contributions over the past year](./metrics.isocalendar.svg)
+
+## 🈷️ Languages activity
+
+![Languages used across my GitHub projects](./metrics.languages.svg)
+
+## 🕹️ Steam
+
+![My Steam profile and recently played games](./metrics.steam.svg)
+
+<p align="center"><sub>Metrics update daily with <a href="https://github.com/lowlighter/metrics">lowlighter/metrics</a>.</sub></p>
