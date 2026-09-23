@@ -1,0 +1,70 @@
+name: Profile metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/metrics.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check required secrets
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          STEAM_ID: ${{ secrets.STEAM_ID }}
+        run: |
+          test -n "$METRICS_TOKEN" || { echo "::error::Add the METRICS_TOKEN repository secret"; exit 1; }
+          test -n "$STEAM_API_KEY" || { echo "::error::Add the STEAM_API_KEY repository secret"; exit 1; }
+          test -n "$STEAM_ID" || { echo "::error::Add the STEAM_ID repository secret"; exit 1; }
+
+      - name: Isometric commit calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          base: ""
+          config_timezone: Europe/Warsaw
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugins_errors_fatal: yes
+
+      - name: Languages activity
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          plugin_languages_limit: 6
+          plugins_errors_fatal: yes
+
+      - name: Steam
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.steam.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_steam: yes
+          plugin_steam_token: ${{ secrets.STEAM_API_KEY }}
+          plugin_steam_user: ${{ secrets.STEAM_ID }}
+          plugin_steam_sections: player, most-played, recently-played
+          plugin_steam_games_limit: 3
+          plugin_steam_recent_games_limit: 3
+          plugins_errors_fatal: yes
