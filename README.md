@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./metrics.base.svg" alt="My GitHub profile statistics" width="480">
+</p>
+
 <h1 align="center">Hi, I'm Marcel 👋</h1>
 
 <p align="center">
@@ -32,6 +36,10 @@
 ## 🈷️ Languages activity
 
 ![Languages used across my GitHub projects](./metrics.languages.svg)
+
+## 🧮 Repositories traffic
+
+![Views across my GitHub repositories](./metrics.traffic.svg)
 
 ## 🕹️ Steam
 
