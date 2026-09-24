@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./metrics.base.svg" alt="My GitHub profile statistics" width="480">
-</p>
-
 <h1 align="center">Hi, I'm Marcel 👋</h1>
 
 <p align="center">
@@ -32,6 +28,12 @@
 ## 📅 Isometric commit calendar
 
 ![My GitHub contributions over the past year](./metrics.isocalendar.svg)
+
+## 👤 For user accounts
+
+<p align="center">
+  <img src="./metrics.base.svg" alt="My GitHub profile statistics" width="480">
+</p>
 
 ## 🈷️ Languages activity
 
